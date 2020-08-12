@@ -1,0 +1,15 @@
+.app{
+    border: 1px solid gray;
+    height: 30rem;
+}
+.describe{
+    line-height: 1.8rem;
+    opacity: 0.85;
+    padding: 3rem;
+}
+.infomation{
+    margin-top: 2rem;
+}
+.infomation a{
+    color: red;
+}
