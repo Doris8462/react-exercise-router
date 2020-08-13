@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, Route, Switch } from "react-router-dom";
+import { Link, Route, Switch, Redirect } from "react-router-dom";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
 import MyProfile from "./MyProfile";
@@ -21,8 +21,8 @@ export default class Header extends Component {
           <Route path="/aboutUs" component={AboutUs} />
           <Route path="/products" component={Products} />
           <Route path="/products/:id" component={Products} />
-          <Route path="/goods" component={Products} />
-          <Route path="*" component={Home} />
+          <Redirect from="/goods" to="/products" />
+          <Route path="*" component={Home} /> 
         </Switch>
       </div>
     );
